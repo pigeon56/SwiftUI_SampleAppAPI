@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Item 1",
+    "image": "https://iosacademy.io/assets/images/courses/tiktok.png"
+  },
+  {
+    "name": "Item 2",
+    "image": "https://iosacademy.io/assets/images/courses/stocks-app.png"
+  },
+  {
+    "name": "Item 3",
+    "image": "https://iosacademy.io/assets/images/courses/instagram.png"
+  },
+  {
+    "name": "Item 4",
+    "image": "https://iosacademy.io/assets/images/courses/swiftui-chat-app.png"
+  },
+  {
+    "name": "Item 5",
+    "image": "https://iosacademy.io/assets/images/courses/Spotify.png"
+  },
+  {
+    "name": "Item 6",
+    "image": "https://iosacademy.io/assets/images/courses/swiftui.png"
+  },
+  {
+    "name": "Item 7",
+    "image": "https://iosacademy.io/assets/images/courses/messenger.png"
+  }
+]

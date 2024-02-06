@@ -1,0 +1,10 @@
+{
+  "request": {
+      "method": "GET",
+      "url": "/3/course/popular"
+  },
+  "response": {
+      "status": 200,
+      "bodyFileName": "course-list.json"
+  }
+}

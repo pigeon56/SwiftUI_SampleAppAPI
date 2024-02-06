@@ -15,6 +15,7 @@
 		96286BB22B717E5500A07166 /* SampleAppAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */; };
 		96286BB42B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */; };
 		96286BC12B71832800A07166 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BC02B71832800A07166 /* ViewModel.swift */; };
+		96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 96286BC32B7283C200A07166 /* WireMock.jar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppAPIUITests.swift; sourceTree = "<group>"; };
 		96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		96286BC02B71832800A07166 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		96286BC32B7283C200A07166 /* WireMock.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = WireMock.jar; path = ../../../../../Downloads/WireMock.jar; sourceTree = "<group>"; };
+		96286BC52B7289E300A07166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +101,8 @@
 		96286B942B717E5200A07166 /* SampleAppAPI */ = {
 			isa = PBXGroup;
 			children = (
+				96286BC52B7289E300A07166 /* Info.plist */,
+				96286BC22B7283A700A07166 /* Vendor */,
 				96286B952B717E5200A07166 /* SampleAppAPIApp.swift */,
 				96286B972B717E5200A07166 /* ContentView.swift */,
 				96286B992B717E5500A07166 /* Assets.xcassets */,
@@ -130,6 +136,14 @@
 				96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */,
 			);
 			path = SampleAppAPIUITests;
+			sourceTree = "<group>";
+		};
+		96286BC22B7283A700A07166 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				96286BC32B7283C200A07166 /* WireMock.jar */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,6 +442,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppAPI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,6 +481,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleAppAPI/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

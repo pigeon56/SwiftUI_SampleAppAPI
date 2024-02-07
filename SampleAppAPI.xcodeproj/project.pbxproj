@@ -19,7 +19,6 @@
 		96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */; };
 		96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */; };
 		96BF6DC32B73DF6D00FDFE13 /* LaunchArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */; };
-		96BF6DC62B73E66C00FDFE13 /* pigeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BF6DC52B73E66C00FDFE13 /* pigeon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
 		96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupUtils.swift; sourceTree = "<group>"; };
 		96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchArguments.swift; sourceTree = "<group>"; };
-		96BF6DC52B73E66C00FDFE13 /* pigeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pigeon.png; path = ../../../../pigeon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +139,6 @@
 		96286BB02B717E5500A07166 /* SampleAppAPIUITests */ = {
 			isa = PBXGroup;
 			children = (
-				96BF6DC42B73E65300FDFE13 /* TestImages */,
 				96BF6DBC2B73D42900FDFE13 /* Utilities */,
 				96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */,
 				96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */,
@@ -172,14 +169,6 @@
 				96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		96BF6DC42B73E65300FDFE13 /* TestImages */ = {
-			isa = PBXGroup;
-			children = (
-				96BF6DC52B73E66C00FDFE13 /* pigeon.png */,
-			);
-			path = TestImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96BF6DC62B73E66C00FDFE13 /* pigeon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,34 +8,52 @@
 import XCTest
 
 final class SampleAppAPIUITests: XCTestCase {
+    
+    let app = XCUIApplication()
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+//        app.launchArguments = LaunchArguments
+        app.launch()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app.terminate()
     }
 
-    func testExample() throws {
+    func testVerifyListContents() throws {
+        let app = XCUIApplication()
+        app.launchArguments = LaunchArguments.launchLocalArguments
+        app.launch()
+    
+        let identifiers = generateCourseList()
+        identifiers.forEach { identifier in
+            let courseTitle = app.staticTexts[identifier]
+            XCTAssertTrue(courseTitle.exists, "\(identifier) text should be present")
+        }
+    }
+    
+    func testDisplayWithImageMissing() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+    
+        print("Wait here")
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+    
+    func generateCourseList() -> [String] {
+        let courses = [
+            "World History",
+            "Earth Science",
+            "Algebra II"
+        ]
+        
+        let indentifiers = courses.map { course in
+            return course
         }
+        
+        return indentifiers
     }
 }

@@ -17,7 +17,16 @@ class ViewModel: ObservableObject {
     @Published var courses: [Course] = []
     
     func fetch() {
-        guard let url = URL(string: "https://iosacademy.io/api/v1/courses/index.php") else {
+        
+        var baseURLString: String {
+            if StartupUtils.shouldRunLocal() {
+                return "http://localhost:9999/3/course/popular"
+            } else {
+                return "https://iosacademy.io/api/v1/courses/index.php"
+            }
+        }
+        
+        guard let url = URL(string: baseURLString) else {
             return
         }
         

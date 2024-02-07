@@ -57,7 +57,9 @@ struct ContentView: View {
                 ForEach(viewModel.courses, id: \.self) { course in
                     HStack {
                         URLImage(urlString: course.image)
+                            .accessibilityIdentifier(course.image)
                         Text(course.name)
+                            .accessibilityIdentifier(course.name)
                             .bold()
                     }
                     .padding(3)

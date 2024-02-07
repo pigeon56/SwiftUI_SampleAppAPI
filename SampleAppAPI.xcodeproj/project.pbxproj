@@ -16,6 +16,10 @@
 		96286BB42B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */; };
 		96286BC12B71832800A07166 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BC02B71832800A07166 /* ViewModel.swift */; };
 		96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 96286BC32B7283C200A07166 /* WireMock.jar */; };
+		96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */; };
+		96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */; };
+		96BF6DC32B73DF6D00FDFE13 /* LaunchArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */; };
+		96BF6DC62B73E66C00FDFE13 /* pigeon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BF6DC52B73E66C00FDFE13 /* pigeon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		96286BC02B71832800A07166 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		96286BC32B7283C200A07166 /* WireMock.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = WireMock.jar; path = ../../../../../Downloads/WireMock.jar; sourceTree = "<group>"; };
 		96286BC52B7289E300A07166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
+		96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupUtils.swift; sourceTree = "<group>"; };
+		96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchArguments.swift; sourceTree = "<group>"; };
+		96BF6DC52B73E66C00FDFE13 /* pigeon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pigeon.png; path = ../../../../pigeon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		96286B942B717E5200A07166 /* SampleAppAPI */ = {
 			isa = PBXGroup;
 			children = (
+				96BF6DBF2B73DDA300FDFE13 /* Utils */,
 				96286BC52B7289E300A07166 /* Info.plist */,
 				96286BC22B7283A700A07166 /* Vendor */,
 				96286B952B717E5200A07166 /* SampleAppAPIApp.swift */,
@@ -132,6 +141,8 @@
 		96286BB02B717E5500A07166 /* SampleAppAPIUITests */ = {
 			isa = PBXGroup;
 			children = (
+				96BF6DC42B73E65300FDFE13 /* TestImages */,
+				96BF6DBC2B73D42900FDFE13 /* Utilities */,
 				96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */,
 				96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */,
 			);
@@ -144,6 +155,31 @@
 				96286BC32B7283C200A07166 /* WireMock.jar */,
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		96BF6DBC2B73D42900FDFE13 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */,
+				96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		96BF6DBF2B73DDA300FDFE13 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		96BF6DC42B73E65300FDFE13 /* TestImages */ = {
+			isa = PBXGroup;
+			children = (
+				96BF6DC52B73E66C00FDFE13 /* pigeon.png */,
+			);
+			path = TestImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BF6DC62B73E66C00FDFE13 /* pigeon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96286B982B717E5200A07166 /* ContentView.swift in Sources */,
+				96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */,
 				96286BC12B71832800A07166 /* ViewModel.swift in Sources */,
 				96286B962B717E5200A07166 /* SampleAppAPIApp.swift in Sources */,
 			);
@@ -294,6 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */,
+				96BF6DC32B73DF6D00FDFE13 /* LaunchArguments.swift in Sources */,
 				96286BB22B717E5500A07166 /* SampleAppAPIUITests.swift in Sources */,
 				96286BB42B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift in Sources */,
 			);

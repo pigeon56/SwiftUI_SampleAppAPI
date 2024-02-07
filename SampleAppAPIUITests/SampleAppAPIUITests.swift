@@ -12,8 +12,9 @@ final class SampleAppAPIUITests: XCTestCase {
     let app = XCUIApplication()
 
     override func setUpWithError() throws {
+        XCUIDevice.shared.orientation = .portrait
         continueAfterFailure = false
-//        app.launchArguments = LaunchArguments
+        app.launchArguments = LaunchArguments.launchLocalArguments
         app.launch()
     }
 
@@ -22,10 +23,6 @@ final class SampleAppAPIUITests: XCTestCase {
     }
 
     func testVerifyListContents() throws {
-        let app = XCUIApplication()
-        app.launchArguments = LaunchArguments.launchLocalArguments
-        app.launch()
-    
         let identifiers = generateCourseList()
         identifiers.forEach { identifier in
             let courseTitle = app.staticTexts[identifier]
@@ -34,13 +31,11 @@ final class SampleAppAPIUITests: XCTestCase {
     }
     
     func testDisplayWithImageMissing() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+        // MARK: This test is designed to fail for purposes of testing CI/CD and reporting
+        let predicate = NSPredicate(format: "label CONTAINS[c] 'video'")
+        print(app.images.containing(predicate))
     
-        print("Wait here")
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual(app.images.containing(predicate).count, 0, "The number of images displaying the 'video' label should be zero")
     }
     
     func generateCourseList() -> [String] {

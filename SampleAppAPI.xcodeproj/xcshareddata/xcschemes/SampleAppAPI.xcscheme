@@ -50,11 +50,6 @@
                BlueprintName = "SampleAppAPIUITests"
                ReferencedContainer = "container:SampleAppAPI.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "SampleAppAPIUITests/testDisplayWithImageMissing()">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

@@ -5,26 +5,26 @@
   },
   {
     "name": "Earth Science",
-    "image": "https://iosacademy.io/assets/images/courses/stocks-app.png"
+    "image": "http://localhost:9999/disk-images"
   },
   {
     "name": "Algebra II",
-    "image": "https://iosacademy.io/assets/images/courses/instagram.png"
+    "image": "http://localhost:9999/disk-images"
   },
   {
-    "name": "Item 4",
-    "image": "https://iosacademy.io/assets/images/courses/swiftui-chat-app.png"
+    "name": "Geometry IV",
+    "image": "http://localhost:9999/disk-images"
   },
   {
-    "name": "Item 5",
-    "image": "https://iosacademy.io/assets/images/courses/Spotify.png"
+    "name": "Civics",
+    "image": ""
   },
   {
-    "name": "Item 6",
-    "image": "https://iosacademy.io/assets/images/courses/swiftui.png"
+    "name": "Ecomonics",
+    "image": "http://localhost:9999/disk-images"
   },
   {
-    "name": "Item 7",
-    "image": "https://iosacademy.io/assets/images/courses/messenger.png"
+    "name": "Anthropology",
+    "image": "http://localhost:9999/disk-images"
   }
 ]

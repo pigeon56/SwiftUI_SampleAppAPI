@@ -13,7 +13,6 @@
 		96286B9E2B717E5500A07166 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96286B9D2B717E5500A07166 /* Preview Assets.xcassets */; };
 		96286BA82B717E5500A07166 /* SampleAppAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BA72B717E5500A07166 /* SampleAppAPITests.swift */; };
 		96286BB22B717E5500A07166 /* SampleAppAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */; };
-		96286BB42B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */; };
 		96286BC12B71832800A07166 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BC02B71832800A07166 /* ViewModel.swift */; };
 		96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 96286BC32B7283C200A07166 /* WireMock.jar */; };
 		96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */; };
@@ -49,7 +48,6 @@
 		96286BA72B717E5500A07166 /* SampleAppAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppAPITests.swift; sourceTree = "<group>"; };
 		96286BAD2B717E5500A07166 /* SampleAppAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAppAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppAPIUITests.swift; sourceTree = "<group>"; };
-		96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		96286BC02B71832800A07166 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		96286BC32B7283C200A07166 /* WireMock.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = WireMock.jar; path = ../../../../../Downloads/WireMock.jar; sourceTree = "<group>"; };
 		96286BC52B7289E300A07166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			children = (
 				96BF6DBC2B73D42900FDFE13 /* Utilities */,
 				96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */,
-				96286BB32B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift */,
 			);
 			path = SampleAppAPIUITests;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */,
 				96BF6DC32B73DF6D00FDFE13 /* LaunchArguments.swift in Sources */,
 				96286BB22B717E5500A07166 /* SampleAppAPIUITests.swift in Sources */,
-				96286BB42B717E5500A07166 /* SampleAppAPIUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

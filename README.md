@@ -1,5 +1,7 @@
 # SwiftUI_SampleAppAPI
 
+## NOTE: Use branch chore/wiremock-jenkins
+
 ## Mission
 This app is a proof-of-concept to explore and test some methodologies of executing iOS XCUITests with mock data, and to run the tests via a CI/CD pipeline. 
 

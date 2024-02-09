@@ -81,7 +81,7 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-runlocal"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>

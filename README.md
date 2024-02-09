@@ -8,7 +8,7 @@ This app is a proof-of-concept to explore and test some methodologies of executi
 [WireMock](https://wiremock.org/docs/download-and-installation/) - Used to mock API calls for automated iOS tests. A folder called "Vendor" is added to the root of the app (not the root of the project), and a .jar file is added here to allow for running WireMock as a standaline process  
 [Fastlane](https://docs.fastlane.tools/getting-started/ios/running-tests/) - Fastlane is used for the automation of iOS deployments in CI/CD environments, but it is also very easy to create lanes where you can run a specified set of tests - or all tests - with enhanced logging in the terminal  
 [Jenkins](https://www.jenkins.io/) - Used for Continuous Integration / Continuous Deployment (CI/CD); for the purposes of this app, it is set up with a webhook to run UI tests with every push to GitHub.  
-[Ngrok](https://ngrok.com/download) - Workaround used to forward webhooks to Jenkins via GitHub since Jenkins is running on localhost  
+[Ngrok](https://ngrok.com/use-cases) - Workaround used to forward webhooks to Jenkins via GitHub since Jenkins is running on localhost
 
 ## Process
 Will add details about process here

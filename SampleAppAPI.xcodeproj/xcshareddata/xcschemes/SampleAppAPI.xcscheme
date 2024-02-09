@@ -39,6 +39,11 @@
                BlueprintName = "SampleAppAPITests"
                ReferencedContainer = "container:SampleAppAPI.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "SampleAppAPITests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO"

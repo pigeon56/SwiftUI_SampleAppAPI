@@ -24,6 +24,7 @@ Will add details about process here
 - Currently using Swift Fastlane, but the Ruby implementation might be a lot more lightweight in terms of the number of files that need to be committed to GitHub
 - Tests run and pass or fail as expected when I run builds manually in Jenkins, but test runs are ultimately aborted when kicked off pushing updates and going through the webhook
 - Although tests are running via Jenkins, I'm running WireMock locally; need to figure out how to add a build step to run WireMock for a CI/CD pipeline
+- Need to figure out how to get interactive test reports working locally and in Jenkins; can only generate JUnit test reports locally; html reports yield no test data. Have not tried yet on Jenkins.
 
 ## Troubleshooting
 __Webhook isn't working after setting it up in GitHub ('Polling has not run yet' under GitHub Hook Log in Jenkins)__  

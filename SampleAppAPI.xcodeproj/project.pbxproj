@@ -17,6 +17,7 @@
 		96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 96286BC32B7283C200A07166 /* WireMock.jar */; };
 		963B63CC2B7BC05F00672A55 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 963B63CB2B7BC05F00672A55 /* InlineSnapshotTesting */; };
 		963B63CE2B7BC05F00672A55 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 963B63CD2B7BC05F00672A55 /* SnapshotTesting */; };
+		963B63D02B7BFD7100672A55 /* CourseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B63CF2B7BFD7100672A55 /* CourseRowView.swift */; };
 		96BF6DBE2B73D44F00FDFE13 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */; };
 		96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */; };
 		96BF6DC32B73DF6D00FDFE13 /* LaunchArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */; };
@@ -53,6 +54,7 @@
 		96286BC02B71832800A07166 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		96286BC32B7283C200A07166 /* WireMock.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = WireMock.jar; path = ../../../../../Downloads/WireMock.jar; sourceTree = "<group>"; };
 		96286BC52B7289E300A07166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		963B63CF2B7BFD7100672A55 /* CourseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRowView.swift; sourceTree = "<group>"; };
 		96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
 		96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupUtils.swift; sourceTree = "<group>"; };
 		96BF6DC22B73DF6D00FDFE13 /* LaunchArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchArguments.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				96286BC22B7283A700A07166 /* Vendor */,
 				96286B952B717E5200A07166 /* SampleAppAPIApp.swift */,
 				96286B972B717E5200A07166 /* ContentView.swift */,
+				963B63CF2B7BFD7100672A55 /* CourseRowView.swift */,
 				96286B992B717E5500A07166 /* Assets.xcassets */,
 				96286B9B2B717E5500A07166 /* SampleAppAPI.entitlements */,
 				96286B9C2B717E5500A07166 /* Preview Content */,
@@ -188,6 +191,8 @@
 			dependencies = (
 			);
 			name = SampleAppAPI;
+			packageProductDependencies = (
+			);
 			productName = SampleAppAPI;
 			productReference = 96286B922B717E5200A07166 /* SampleAppAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96286B982B717E5200A07166 /* ContentView.swift in Sources */,
+				963B63D02B7BFD7100672A55 /* CourseRowView.swift in Sources */,
 				96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */,
 				96286BC12B71832800A07166 /* ViewModel.swift in Sources */,
 				96286B962B717E5200A07166 /* SampleAppAPIApp.swift in Sources */,

@@ -11,31 +11,19 @@ import SnapshotTesting
 import SwiftUI
 
 
-final class SampleAppAPITests: XCTestCase {
-    var viewController: UIViewController!
-    var vc: UIViewController!
+class SampleAppAPITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        try super.setUpWithError()
-        let contentView = ContentView()
-        let urlImageView = URLImage(urlString: "video")
-        viewController = UIHostingController(rootView: contentView)
-        vc = UIHostingController(rootView: urlImageView)
+    func testDefaultAppearance() {
+        sleep(10)
+        let courseRowView = CourseRowView(course: Course(name: "A.J. and Paulie's Super Amazing App!", image: "http://localhost:9999/disk-images"))
+        assertSnapshot(matching: courseRowView.toVC(), as: .image)
     }
+}
 
-    override func tearDownWithError() throws {
-        try super.tearDownWithError()
-        viewController = nil
-    }
-    
-    func testFirstTest() throws {
-//        isRecording = true
-        sleep(10)
-        assertSnapshot(matching: viewController, as: .image(on: .iPhoneX))
-    }
-    
-    func testURLImage() throws {
-        sleep(10)
-        assertSnapshot(matching: vc, as: .image(on: .iPhoneX))
+extension SwiftUI.View {
+    func toVC() -> UIViewController {
+        let vc = UIHostingController(rootView: self)
+        vc.view.frame = UIScreen.main.bounds
+        return vc
     }
 }

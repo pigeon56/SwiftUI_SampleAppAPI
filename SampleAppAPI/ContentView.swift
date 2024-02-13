@@ -55,14 +55,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(viewModel.courses, id: \.self) { course in
-                    HStack {
-                        URLImage(urlString: course.image)
-                            .accessibilityIdentifier(StartupUtils.shouldRunLocal() ? "Stubbed Image" :  course.image)
-                        Text(course.name)
-                            .accessibilityIdentifier(course.name)
-                            .bold()
-                    }
-                    .padding(3)
+                    CourseRowView(course: course)
                 }
             }
             .navigationTitle("Courses")
@@ -75,4 +68,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+//    URLImage(urlString: "http://localhost:9999/disk-images")
 }

@@ -13,10 +13,16 @@ import SwiftUI
 
 class SampleAppAPITests: XCTestCase {
 
-    func testDefaultAppearance() {
+    func testListAppearance() {
         sleep(10)
         let courseRowView = CourseRowView(course: Course(name: "A.J. and Paulie's Super Amazing App!", image: "http://localhost:9999/disk-images"))
         assertSnapshot(matching: courseRowView.toVC(), as: .image)
+    }
+    
+    func testDefaultAppearance() {
+        sleep(10)
+        let courseDetailView = CourseDetailView(course: Course(name: "Advanced Calculus", image: "http://localhost:9999/disk-images"))
+        assertSnapshot(matching: courseDetailView.toVC(), as: .image)
     }
 }
 

@@ -11,6 +11,7 @@ import SwiftUI
 struct Course: Hashable, Codable {
     let name: String
     let image: String
+    let image_detail: String
 }
 
 class ViewModel: ObservableObject {

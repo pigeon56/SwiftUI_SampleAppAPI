@@ -15,6 +15,9 @@
 		96286BB22B717E5500A07166 /* SampleAppAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BB12B717E5500A07166 /* SampleAppAPIUITests.swift */; };
 		96286BC12B71832800A07166 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96286BC02B71832800A07166 /* ViewModel.swift */; };
 		96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 96286BC32B7283C200A07166 /* WireMock.jar */; };
+		962928332B7D1DBD00D8145F /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962928322B7D1DBC00D8145F /* CourseDetailView.swift */; };
+		962928362B7D4AB000D8145F /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 962928352B7D4AB000D8145F /* URLImage */; };
+		962928382B7D4AB000D8145F /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 962928372B7D4AB000D8145F /* URLImageStore */; };
 		963B63CC2B7BC05F00672A55 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 963B63CB2B7BC05F00672A55 /* InlineSnapshotTesting */; };
 		963B63CE2B7BC05F00672A55 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 963B63CD2B7BC05F00672A55 /* SnapshotTesting */; };
 		963B63D02B7BFD7100672A55 /* CourseRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B63CF2B7BFD7100672A55 /* CourseRowView.swift */; };
@@ -54,6 +57,7 @@
 		96286BC02B71832800A07166 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		96286BC32B7283C200A07166 /* WireMock.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = WireMock.jar; path = ../../../../../Downloads/WireMock.jar; sourceTree = "<group>"; };
 		96286BC52B7289E300A07166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		962928322B7D1DBC00D8145F /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 		963B63CF2B7BFD7100672A55 /* CourseRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRowView.swift; sourceTree = "<group>"; };
 		96BF6DBD2B73D44F00FDFE13 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
 		96BF6DC02B73DDBD00FDFE13 /* StartupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupUtils.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962928362B7D4AB000D8145F /* URLImage in Frameworks */,
+				962928382B7D4AB000D8145F /* URLImageStore in Frameworks */,
 				96286BC42B7283C200A07166 /* WireMock.jar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +127,7 @@
 				96286B9B2B717E5500A07166 /* SampleAppAPI.entitlements */,
 				96286B9C2B717E5500A07166 /* Preview Content */,
 				96286BC02B71832800A07166 /* ViewModel.swift */,
+				962928322B7D1DBC00D8145F /* CourseDetailView.swift */,
 			);
 			path = SampleAppAPI;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 			);
 			name = SampleAppAPI;
 			packageProductDependencies = (
+				962928352B7D4AB000D8145F /* URLImage */,
+				962928372B7D4AB000D8145F /* URLImageStore */,
 			);
 			productName = SampleAppAPI;
 			productReference = 96286B922B717E5200A07166 /* SampleAppAPI.app */;
@@ -271,6 +280,7 @@
 			mainGroup = 96286B892B717E5200A07166;
 			packageReferences = (
 				963B63CA2B7BC05F00672A55 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				962928342B7D4AAF00D8145F /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 96286B932B717E5200A07166 /* Products */;
 			projectDirPath = "";
@@ -318,6 +328,7 @@
 				963B63D02B7BFD7100672A55 /* CourseRowView.swift in Sources */,
 				96BF6DC12B73DDBD00FDFE13 /* StartupUtils.swift in Sources */,
 				96286BC12B71832800A07166 /* ViewModel.swift in Sources */,
+				962928332B7D1DBD00D8145F /* CourseDetailView.swift in Sources */,
 				96286B962B717E5200A07166 /* SampleAppAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +691,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		962928342B7D4AAF00D8145F /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
 		963B63CA2B7BC05F00672A55 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
@@ -691,6 +710,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		962928352B7D4AB000D8145F /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 962928342B7D4AAF00D8145F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		962928372B7D4AB000D8145F /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 962928342B7D4AAF00D8145F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
 		963B63CB2B7BC05F00672A55 /* InlineSnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 963B63CA2B7BC05F00672A55 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;

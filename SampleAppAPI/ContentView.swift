@@ -55,7 +55,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(viewModel.courses, id: \.self) { course in
-                    CourseRowView(course: course)
+                    ZStack(alignment: .leading) {
+                        CourseRowView(course: course)
+                        NavigationLink("", destination: CourseDetailView(course: course))
+                    }
                 }
             }
             .navigationTitle("Courses")

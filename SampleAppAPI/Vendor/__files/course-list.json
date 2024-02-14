@@ -1,30 +1,37 @@
 [
   {
     "name": "World History",
-    "image": "http://localhost:9999/disk-images"
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   },
   {
     "name": "Earth Science",
-    "image": "http://localhost:9999/disk-images"
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   },
   {
     "name": "Algebra II",
-    "image": "http://localhost:9999/disk-images"
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   },
   {
     "name": "Geometry IV",
-    "image": "http://localhost:9999/disk-images"
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   },
   {
     "name": "Civics",
-    "image": ""
+    "image": "",
+    "image_detail": ""
   },
   {
-    "name": "Ecomonics",
-    "image": "http://localhost:9999/disk-images"
+    "name": "Economics",
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   },
   {
     "name": "Anthropology",
-    "image": "http://localhost:9999/disk-images"
+    "image": "http://localhost:9999/disk-images",
+    "image_detail": "http://localhost:9999/disk-images/detail"
   }
 ]

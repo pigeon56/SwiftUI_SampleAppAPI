@@ -1,0 +1,13 @@
+{
+  "request": {
+      "method": "GET",
+      "url": "/disk-images/detail"
+  },
+  "response": {
+      "status": 200,
+      "headers": {
+        "Content-Type": "image/png"
+      },
+      "bodyFileName": "yaphit.png"
+  }
+}

@@ -14,6 +14,7 @@ struct CourseRowView: View {
         HStack {
             URLImage(urlString: course.image)
                 .accessibilityIdentifier(StartupUtils.shouldRunLocal() ? "Stubbed Image" :  course.image)
+                .frame(width: 130, height: 70, alignment: .leading)
             Text(course.name)
                 .accessibilityIdentifier(course.name)
                 .bold()
@@ -23,5 +24,5 @@ struct CourseRowView: View {
 }
 
 #Preview {
-    CourseRowView(course: Course(name: "A.J. and Paulie's Super Wonderful and Amazing Course", image: "video"))
+    CourseRowView(course: Course(name: "A.J. and Paulie's Super Wonderful and Amazing Course", image: "video", image_detail: "video"))
 }

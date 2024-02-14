@@ -12,7 +12,7 @@ struct CourseRowView: View {
     
     var body: some View {
         HStack {
-            URLImage(urlString: course.image)
+            URLImageList(urlString: course.image)
                 .accessibilityIdentifier(StartupUtils.shouldRunLocal() ? "Stubbed Image" :  course.image)
                 .frame(width: 130, height: 70, alignment: .leading)
             Text(course.name)

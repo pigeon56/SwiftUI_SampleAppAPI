@@ -11,7 +11,7 @@
 
 import SwiftUI
 
-struct URLImage: View {
+struct URLImageList: View {
     
     let urlString: String
     
@@ -29,6 +29,44 @@ struct URLImage: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 130, height: 70)
+                .background(Color.gray)
+                .onAppear {
+                    fetchData()
+                }
+        }
+    }
+    
+    private func fetchData() {
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+            self.data = data
+        }
+        task.resume()
+    }
+}
+
+struct URLImageDetail: View {
+    
+    let urlString: String
+    
+    @State var data: Data?
+    
+    var body: some View {
+        if let data = data, let uiimage = UIImage(data: data) {
+            Image(uiImage: uiimage)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 460, height: 210)
+                .background(Color.gray)
+        } else {
+            Image(systemName: "video")
+                .resizable()
+                .padding(8)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 460, height: 210)
                 .background(Color.gray)
                 .onAppear {
                     fetchData()
@@ -71,5 +109,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-//    URLImage(urlString: "http://localhost:9999/disk-images")
+//    URLImageList(urlString: "http://localhost:9999/disk-images")
 }

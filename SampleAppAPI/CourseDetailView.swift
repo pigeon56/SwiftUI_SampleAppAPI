@@ -13,7 +13,7 @@ struct CourseDetailView: View {
     
     var body: some View {
         VStack {
-            AsyncImage(url: URL(string: course.image_detail))
+            URLImageDetail(urlString: course.image_detail)
                 .frame(maxHeight: 270)
             Text(course.name)
                 .padding(.leading, 16)

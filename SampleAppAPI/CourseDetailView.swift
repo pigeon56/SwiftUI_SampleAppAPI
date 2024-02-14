@@ -13,7 +13,7 @@ struct CourseDetailView: View {
     
     var body: some View {
         VStack {
-            URLImageDetail(urlString: course.image_detail)
+            URLImageDetail(urlString: course.image)
                 .frame(maxHeight: 270)
             Text(course.name)
                 .padding(.leading, 16)
@@ -27,5 +27,5 @@ struct CourseDetailView: View {
 }
 
 #Preview {
-    CourseDetailView(course: Course(name: "Drama II", image: "pidge-coffee", image_detail: "yaphit"))
+    CourseDetailView(course: Course(name: "Drama II", image: "pidge-coffee"))
 }

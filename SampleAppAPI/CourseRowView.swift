@@ -24,5 +24,5 @@ struct CourseRowView: View {
 }
 
 #Preview {
-    CourseRowView(course: Course(name: "A.J. and Paulie's Super Wonderful and Amazing Course", image: "video", image_detail: "video"))
+    CourseRowView(course: Course(name: "A.J. and Paulie's Super Wonderful and Amazing Course", image: "video"))
 }
